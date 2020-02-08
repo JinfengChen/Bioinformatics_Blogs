@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bioinformatics Blog</title>
+    <description></description>
+    <link>http://0.0.0.0:4000/</link>
+    <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sat, 08 Feb 2020 11:04:13 -0800</pubDate>
+    <lastBuildDate>Sat, 08 Feb 2020 11:04:13 -0800</lastBuildDate>
+    <generator>Jekyll v4.0.0</generator>
+    
+      <item>
+        <title>Peter John Landin</title>
+        <description>&lt;blockquote&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Peter_Landin&quot;&gt;wiki&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E5%BD%BC%E5%BE%97%C2%B7%E5%85%B0%E4%B8%81&quot;&gt;维基&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I was long curious about how does λ calculus become the foundation of formalizaing programming languages. It’s strange that I haven’t look up the answer until today: It’s invented so early by Alonzo Church (whom I will write another post for) as an alternative mathematic foundation in 1930s and its relation with programming language was re-discoverred in 1960s.&lt;/p&gt;
+
+&lt;p&gt;From the “Lambda calculus and programming languages” section of wikipedia page:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;As pointed out by Peter Landin’s 1965 paper “A Correspondence between ALGOL 60 and Church’s Lambda-notation”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I found this name quite familiar since I read his paper “The mechanical evaluation of expressions” before, in which he introduced the first abstract machine for functional programming language, namely &lt;a href=&quot;https://en.wikipedia.org/wiki/SECD_machine&quot;&gt;SECD machine&lt;/a&gt;. This paper also define the term &lt;a href=&quot;https://en.wikipedia.org/wiki/Closure_(computer_programming)&quot;&gt;Closure&lt;/a&gt; which becomes a prevalent notion in computer programming nowadays.&lt;/p&gt;
+
+&lt;p&gt;Besides of that, his contributions also include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;on ALGO definition&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/ISWIM&quot;&gt;ISWIM&lt;/a&gt; programming language&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Off-side_rule&quot;&gt;off-side rule&lt;/a&gt;, known as “indentation-based” syntax nowadays, popularized by Miranda, Haskell, Python, etc.&lt;/li&gt;
+  &lt;li&gt;coin the term &lt;a href=&quot;https://en.wikipedia.org/wiki/Syntactic_sugar&quot;&gt;syntactic sugar&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;He was much influenced by a study of McCarthy’s LISP and taught &lt;a href=&quot;https://en.wikipedia.org/wiki/Tony_Hoare&quot;&gt;Tony Hoare&lt;/a&gt; ALGO with Peter Naur and Edsger W. Dijkstra. (Oh yes, definitely 4 more people to write).&lt;/p&gt;
+
+&lt;p&gt;I have just download his old, influential paper “The next 700 programming languages”. 
+I am sure it will be an enjoyable read.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 13 Sep 2019 00:00:00 -0700</pubDate>
+        <link>http://0.0.0.0:4000/2019/09/13/peter-john-landin/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2019/09/13/peter-john-landin/</guid>
+        
+        <category>CS Idols</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>My Spacemacs Workflow</title>
+        <description>&lt;p&gt;Emacs tend to provide a good support for functional programming languages. Indeed, many FP language community exclusively use Emacs and give only first-party IDE supports to Emacs, such as Coq, Agda, Standard ML, Clojure, etc.&lt;/p&gt;
+
+&lt;p&gt;For the purpose of programming Coq with Proof General, I started to try with Emacs. I quickly found Spacemacs a good alternatives for me…someone had get used to Vim keybindings and want to get some thing useful ASAP w/o configuring a long list as my &lt;code class=&quot;highlighter-rouge&quot;&gt;.vimrc&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Though the overall experience is pretty smooth, many quirks about Spacemacs are always being forgotten and had to look up again and again, so I decided to open a note for some specific “workflow” that I often used.&lt;/p&gt;
+
+&lt;p&gt;Yes this is more like a note publishing online for the purpose of “on-demand accessible”. So don’t expect good writing anyways.&lt;/p&gt;
+
+&lt;h3 id=&quot;vim-binding&quot;&gt;Vim-binding&lt;/h3&gt;
+
+&lt;p&gt;Choose &lt;code class=&quot;highlighter-rouge&quot;&gt;evil&lt;/code&gt;!&lt;/p&gt;
+
+&lt;h3 id=&quot;airline&quot;&gt;Airline&lt;/h3&gt;
+
+&lt;p&gt;It’s there!&lt;/p&gt;
+
+&lt;h3 id=&quot;nerd-tree--file-sidebar&quot;&gt;Nerd Tree / File Sidebar&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;SPC f t&lt;/code&gt; for &lt;em&gt;file tree&lt;/em&gt;. The keybindings for specific operations are very different w/ Vim NerdTree though.&lt;/p&gt;
+
+&lt;h3 id=&quot;shell--terminal&quot;&gt;Shell / Terminal&lt;/h3&gt;
+
+&lt;p&gt;I occasionally use &lt;a href=&quot;https://neovim.io/doc/user/nvim_terminal_emulator.html&quot;&gt;Neovim’s terminal emulator&lt;/a&gt; but in most of the time I just &lt;code class=&quot;highlighter-rouge&quot;&gt;cmd + D&lt;/code&gt; for iTerms splitted window.&lt;/p&gt;
+
+&lt;p&gt;I even mappped &lt;code class=&quot;highlighter-rouge&quot;&gt;:D&lt;/code&gt; into split-then-terminal to make the experience on par ;)&lt;/p&gt;
+
+&lt;div class=&quot;language-vim highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;command&lt;span class=&quot;p&quot;&gt;!&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&lt;/span&gt;nargs&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;* D  &lt;span class=&quot;k&quot;&gt;belowright&lt;/span&gt; split &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; terminal &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;args&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Anyways, Spacemacs does provide a &lt;code class=&quot;highlighter-rouge&quot;&gt;:shell&lt;/code&gt; that naturally split a window below for terminal. The experience is not very good though.&lt;/p&gt;
+
+&lt;h3 id=&quot;tabs--workspaces&quot;&gt;Tabs / Workspaces&lt;/h3&gt;
+
+&lt;p&gt;I tend to open multiple &lt;em&gt;workspace&lt;/em&gt;. Though people might found Vim tabs useful, I am exclusively use iTerm tabs for similar jobs. However Spacemacs is not living in a terminal.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.reddit.com/r/spacemacs/comments/5w5d2s/vimstyle_tabs/&quot;&gt;r/spacemacs - Vim-style tabs?&lt;/a&gt; gave me a good way to approximate the experience by using &lt;a href=&quot;http://spacemacs.org/doc/DOCUMENTATION.html#workspaces&quot;&gt;Spacemacs Workspaces&lt;/a&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;SPC l w &amp;lt;nth&amp;gt;&lt;/code&gt; trigger a so-called “layout transient state” (I have no idea what’s that mean) to open N-th workspaces, and use &lt;code class=&quot;highlighter-rouge&quot;&gt;gt&lt;/code&gt;/&lt;code class=&quot;highlighter-rouge&quot;&gt;gT&lt;/code&gt; to switch between.&lt;/p&gt;
+
+&lt;h3 id=&quot;fuzz-file-name-search--rg&quot;&gt;Fuzz File Name Search / Rg&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;SPC f f&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;buffers&quot;&gt;Buffers&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;SPC b b&lt;/code&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 08 Sep 2019 00:00:00 -0700</pubDate>
+        <link>http://0.0.0.0:4000/2019/09/08/spacemacs-workflow/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2019/09/08/spacemacs-workflow/</guid>
+        
+        <category>Vim</category>
+        
+        <category>Emacs</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>把「终端下的 Vim」作为 macOS Finder 的打开方式</title>
+        <description>&lt;p&gt;我的日常主力编辑器主要是：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;(Neo)Vim&lt;/li&gt;
+  &lt;li&gt;Spacemacs (via Emacs-plus)&lt;/li&gt;
+  &lt;li&gt;Visual Studio Code&lt;/li&gt;
+  &lt;li&gt;IntelliJ IDEA&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;这里面只有 (Neo)Vim 是存活在终端中的（我并不在终端内使用 Emacs），而由于我日常主要是从终端（via iTerm）来使用电脑，所以会把他们都加入到 &lt;code class=&quot;highlighter-rouge&quot;&gt;$PATH&lt;/code&gt; 里以方便从终端中唤起，VSCode 和 IDEA 都有一键加入的功能， Emacs 我在 &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.zshrc&lt;/code&gt; 中放了一个 &lt;code class=&quot;highlighter-rouge&quot;&gt;alias emacs='open -n -a Emacs.app .'&lt;/code&gt; 解决。&lt;/p&gt;
+
+&lt;p&gt;但是，偶尔也会有从 Finder 中打开文件的需求，这时候如果通常会打开拓展名所绑定的 &lt;code class=&quot;highlighter-rouge&quot;&gt;Open with...&lt;/code&gt; 应用，在大部分时候我的默认绑定是 VSCode，但是今天心血来潮觉得有没有办法直接打开 Vim 呢？搜了一下还真有基于 AppleScript 的解决方案：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;打开 &lt;code class=&quot;highlighter-rouge&quot;&gt;Automator.app&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;选择 &lt;code class=&quot;highlighter-rouge&quot;&gt;New Document&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;找到 &lt;code class=&quot;highlighter-rouge&quot;&gt;Run AppleScript&lt;/code&gt; 的 action 双击添加&lt;/li&gt;
+  &lt;li&gt;编写 AppleScript 脚本来唤起终端与 vim （下文给出了我的脚本你可以直接稍作修改使用）&lt;/li&gt;
+  &lt;li&gt;保存为 &lt;code class=&quot;highlighter-rouge&quot;&gt;Applications/iTermVim.app&lt;/code&gt; （你可以自己随便取）&lt;/li&gt;
+  &lt;li&gt;找到你想要以这种方式打开的文件，比如 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;随便&amp;gt;.markdown&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;⌘ i&lt;/code&gt; 获取信息然后修改 &lt;code class=&quot;highlighter-rouge&quot;&gt;Open with&lt;/code&gt; 为这个应用然后 &lt;code class=&quot;highlighter-rouge&quot;&gt;Change All...&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;效果超爽 ;)&lt;/p&gt;
+
+&lt;div class=&quot;language-applescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;POSIX&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;cmd&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;clear; cd `dirname &quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;`;vim &quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;quote&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;quote&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;tell&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;application&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;iTerm&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;activate&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;tell&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;the&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;create&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;tab&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;profile&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;tell&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;the&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;session&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;cmd&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;tell&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;tell&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;tell&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;我这里的代码是采取是用 &lt;code class=&quot;highlighter-rouge&quot;&gt;iTerm&lt;/code&gt; 与唤起 &lt;code class=&quot;highlighter-rouge&quot;&gt;vim&lt;/code&gt;、窗口置前、在新窗口中打开、同时 &lt;code class=&quot;highlighter-rouge&quot;&gt;cd&lt;/code&gt; 到目录。你也可以改成用 macOS 自带的 &lt;code class=&quot;highlighter-rouge&quot;&gt;Terminal.app&lt;/code&gt;、在新窗口而非新 tab 打开、应用不同的 profile、或是执行其他 executable 等……任你发挥啦。&lt;/p&gt;
+
+&lt;h3 id=&quot;references&quot;&gt;References&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gist.github.com/charlietran/43639b0f4e0a01c7c20df8f1929b76f2&quot;&gt;Open file in iTerm vim for MacOS Sierra&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://bl.ocks.org/napcs/2d8376e941133ccfad63e33bf1b1b60c&quot;&gt;Open file in Terminal Vim on OSX&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 03 Sep 2019 00:00:00 -0700</pubDate>
+        <link>http://0.0.0.0:4000/2019/09/03/vim-from-finder/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2019/09/03/vim-from-finder/</guid>
+        
+        <category>Vim</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Vim 与中文输入法</title>
+        <description>&lt;p&gt;Update: 我最后还是放弃把 Vim 作为主要编辑器来输入中文了，整体使用下来 mental model 的 cost 太重了。记笔记时用用中文呀或者改改博客时偶尔用一下还蛮去，这个时候这个功能至少能帮助你 Esc 之后不煞笔，所以也不算完全没有价值吧……&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;我相信很多中文世界的 Vimer 都遇到过这个烦恼，在 vim 的 insert 模式时可能突然想输个中文，输完之后会本能的直接 &lt;code class=&quot;highlighter-rouge&quot;&gt;esc&lt;/code&gt; 接 normal 模式操作，结果发现跳出来的是中文输入法……对于 vscode，我一般会在几次错误之后被逼到退出 vscode vim 模式，而对于终端中用的 neovim，就只能尽量不输入中文了。&lt;/p&gt;
+
+&lt;p&gt;为了满足我 1% 用 vim 输入中文的场景（比如写博客），我还是想看看有没有什么解决方案，Google 出来的解决方案基本是：&lt;em&gt;在退出 insert 模式时记住当时的输入法，并自动切换到默认输入法（一般是英文）给 normal 模式用，并且在下一次进入 insert 模式时再切换回来。&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;原生 vim 的话，可以使用 &lt;a href=&quot;https://github.com/ybian/smartim&quot;&gt;smartim&lt;/a&gt; 插件，原理是调用 &lt;a href=&quot;https://github.com/daipeihust/im-select&quot;&gt;im-select&lt;/a&gt; 这个 CLI 工具来切换输入法。&lt;/p&gt;
+
+&lt;p&gt;对于 VSCode-vim 的话，smartim 的移植也在近期的 PR 中被 merge 到了插件里，&lt;a href=&quot;https://github.com/VSCodeVim/Vim#use-im-select&quot;&gt;详情见文档的这部分配置&lt;/a&gt;，需要指定一下默认输入法和 im-select 的 binary 路径就好。&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;
+不过实话说，在 vim 中编辑中文的效率和体验和英文比都是大打折扣的。因为中文分词难度太高，不像英文可以简单依靠一个 &lt;code class=&quot;highlighter-rouge&quot;&gt;split &quot; &quot;&lt;/code&gt; 搞定。所以其实无论 vim（&lt;code class=&quot;highlighter-rouge&quot;&gt;w&lt;/code&gt;ord，&lt;code class=&quot;highlighter-rouge&quot;&gt;b&lt;/code&gt;egin，&lt;code class=&quot;highlighter-rouge&quot;&gt;e&lt;/code&gt;nd），emacs 还是操作系统自带的（比如 macOS 中的 &lt;code class=&quot;highlighter-rouge&quot;&gt;alt + 箭头&lt;/code&gt;） 「按词移动」功能对于中文都仅仅是跳转到下一个空格处而已，对于中文来说基本就是下一句了……其他常用操作诸如 &lt;code class=&quot;highlighter-rouge&quot;&gt;f&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;/&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;r&lt;/code&gt;eplace, &lt;code class=&quot;highlighter-rouge&quot;&gt;t&lt;/code&gt;ill 也都无法很好的工作，基本只能靠 &lt;code class=&quot;highlighter-rouge&quot;&gt;hjkl&lt;/code&gt; 爬行……&lt;/p&gt;
+
+&lt;p&gt;不过也算聊胜于无吧，由于我的主力外置键盘是 HHKB，能用 vim 操作的一个子集（&lt;code class=&quot;highlighter-rouge&quot;&gt;hjkl&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;o&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;A&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;I&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;v&lt;/code&gt; etc.）可能也比按住 &lt;code class=&quot;highlighter-rouge&quot;&gt;Fn&lt;/code&gt; 的方向键好用……&lt;/p&gt;
+</description>
+        <pubDate>Sat, 06 Oct 2018 00:00:00 -0700</pubDate>
+        <link>http://0.0.0.0:4000/2018/10/06/vim-cn-im/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2018/10/06/vim-cn-im/</guid>
+        
+        <category>Vim</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Avoiding success at all cost</title>
+        <description>&lt;p&gt;“Avoiding success at all cost” is the informal motto behinds &lt;a href=&quot;https://www.haskell.org/&quot;&gt;Haskell&lt;/a&gt;. It could be parenthesized in two ways, either “Avoiding (success at all cost)” or “(Avoiding sucess) (at all cost)”.&lt;/p&gt;
+
+&lt;p&gt;I’m not going to interpret them directly but rather to share some thoughts on “the success vs. costs” basing on my very own understanding and experience.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-success-vs-cost-of-language-design&quot;&gt;The success vs. cost of language design&lt;/h3&gt;
+
+&lt;p&gt;There’re always trade offs (or compromises) in any software design, and programming language design has no exceptions.&lt;/p&gt;
+
+&lt;p&gt;In other words, all language design decision that made them “successful” i.e. being popular and widely-used in industry or education for some reasons, all comes with their own “costs”: being unsafe, limited expressiveness, or having bad performance, etc.&lt;/p&gt;
+
+&lt;p&gt;Whether or not the “cost” is a problem really depends on scenarios, or their goals. For instances, Python/JavaScript are both very expressive and beginner-friendly by being dynamically-typed, sacrifing the type safety and performance. Java, in constrast, uses a much safer and optimization-friendly type system but being much less expressive. Another typicial comparison would be memory management in programming languages, where languages that are “managed” (by either ARC or Gabage Collector) could be much easier and safer (in terms of memory) for most programmers but also considerred slower than languages that are “closer to the metal”.&lt;/p&gt;
+
+&lt;p&gt;None of these “costs”, or “differences”, really prevent them from being immortally popular.&lt;/p&gt;
+
+&lt;p&gt;For Haskell, the story becomes quite different: being research-oriented means the goal of this language is to pursue some “ultimate” things: the “ultimate” simplicity of intermediate representation, the “ultimate” type system where safety and expressiveness can coexist, the “ultimate” compilation speed and runtime performance, the “ultimate” concise and elegant concrete syntax, the “ultimate”…I don’t know. But it has to be some “ultimate” things that is very difficult, probably endless and impossible, to achieve.&lt;/p&gt;
+
+&lt;p&gt;This, as a result, made all language decisions in Haskell became very hard and slow, because &lt;strong&gt;almost nothing can be scarified&lt;/strong&gt;. That’s why Haskell insisted to be lazy to “guard” the purity regardless of some problems of being “call-by-need”; a decent IO mechanisms is missing in the first 4 yrs after the project’s start until P Walder found &lt;em&gt;Monad&lt;/em&gt;; and the &lt;em&gt;Type Class&lt;/em&gt;, which is first proposed in P Walder’s 1989 paper, spent yrs long to implement and popularize.&lt;/p&gt;
+
+&lt;p&gt;As a side note though, it doesn’t mean there is no compromise in Haskell at all. It’s just as minimized as it could be during its progress. When one audience asking why we have Haskell and OCaml, which’re quite similar in very high level, both survived, SPJ replies:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;There’s just a different set of compromises.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;the-success-vs-cost-of-language-design-process&quot;&gt;The success vs. cost of language design process&lt;/h3&gt;
+
+&lt;p&gt;Another common but extremely controversial (if not the most) topics of programming language design is about its design process: Would you prefer dictatorship or a committee (in other words, a dictatorship of many?)? Would you prefer being proprietary or standardized? In which form would you write the standards, in human nature language, pseudo code, or formal semantics? How many and how frequently breaking changes dare you make? Would you let open source community involve in?&lt;/p&gt;
+
+&lt;p&gt;Again, I think there is no THE answer for all those questions. Majority of popular programming languages came and are still on going with very different paths.&lt;/p&gt;
+
+&lt;p&gt;Python, whose creater, Guido van Rossum, known as the “Benevolent Dictator For Life” (BDFL), i.e. good kind of dictator, still play the central role (until July 2018) of the Python’s development after Python getting popular and adapt a open source and community-based development model. This factor direcly contribute to the fact that Python 3, as a breaking (not completely backward-compatible and not easy to port) but good (in terms of language design and consistency) revision of the language can still be landed, despite of many communities’ pressures. There’re many language (Ruby, Perl, Elm) also choose to follow this route.&lt;/p&gt;
+
+&lt;p&gt;JavaScript, widely known as being created by Brendan Eich in 10 days, in comparision, quickly involved into a committee (TC39) and standardized (ECMAScript) language due to both the open nature of the Web and fast adoption of itself. But Brendan, as the creater, wasn’t even powerful enough to push the committee landing ES4, which is also a breaking but much better revision, but ended up with the ES5 (Harmony), a backward-compatible, yet much less ambitious version due to many political “fights” between different parties (e.g. Mozilla, Microsoft, Yahoo etc.) thus the history wasn’t changed. Even the latest rising and yearly releasing of the “modern” JavaScript (ES6 or ES2015, 2016, 2017…) are mainly driven by the new generation of committee parties (+ Google, Facebook, Airbnb etc.) and still in a very open and standardized way.&lt;/p&gt;
+
+&lt;p&gt;As you can see here, even the history and progress of two rather similar languages can be so different, not to mention more proprietary languages such as Java from Sun/Oracle, C# from Microsoft, OC/Swift from Apple (though the latter was open sourced) or more academia and standardized language like SML and Scheme which both has a standard written in formal semantics.&lt;/p&gt;
+
+&lt;p&gt;So it’s not not obvious that Haskell, also chose its own unique process to suit its unique goal. Although it backs on academia, it chose a rather practical/less-formal approach to define the language, i.e. the compiler implementation over standardization (plus many “formal” fragments among papers though), which is more like C++/OCaml from this point of view. It has a committee, but instead of being very open and conservative, it’s more dictatorial (in terms of average users) and super aggressive in terms of making breaking changes. As a result however, it trained a group of very change-tolerant people in its community…All of these quirks and odds combined works very well and avoid the Haskell “becoming too success too quickly”.&lt;/p&gt;
+
+&lt;h3 id=&quot;end-thoughts&quot;&gt;End thoughts&lt;/h3&gt;
+
+&lt;p&gt;To be fair, Haskell has alreay been very “successful” nowdays, in particular academia (for education, sexy type laboratory etc.) but also industry, either being used in real business or being very reputable among programmers (as being both hard and fun).&lt;/p&gt;
+
+&lt;p&gt;I am not confident and qualified to say Haskell is success in the right degree at the right time. But it’s great to see it, after more than 20 and now almost 30 yrs, slowly figure out its very own way, to “Escape from the Ivory Tower”, and keep going beyond.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 27 Sep 2018 00:00:00 -0700</pubDate>
+        <link>http://0.0.0.0:4000/2018/09/27/avoiding-success-at-all-cost/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2018/09/27/avoiding-success-at-all-cost/</guid>
+        
+        <category>Haskell</category>
+        
+        <category>笔记</category>
+        
+        <category>🇬🇧</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>程序员中的梦想家</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;本文首发于我的知乎专栏 &lt;a href=&quot;https://zhuanlan.zhihu.com/p/38722466&quot;&gt;The Little Programmer&lt;/a&gt;，转载请保留链接 ;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;有一类程序员是 visionary 型的，为了实现一些超前的 idea，绕过某些技术的限制，他们写的 code 晦涩高深得只有他们自己能懂，做出来的 tool 看上去很美好结果处处是坑出了 bug 根本没法查，但正是这类人不断创造出新的东西，在洗礼之后成为一个个 big thing。&lt;/p&gt;
+
+&lt;p&gt;我每周都要被 infra 的坑 block 得无法工作几次搞得非常沮丧，后来我发现这个锅除了要扔给 FB 外，还有一大半要扔给我周围这群 visionary 的同事们，我工作直接需要接触到的区区五六个人，发起/创造了 Infer, React, Reason, ReasonReact, BuckleScript…&lt;/p&gt;
+
+&lt;p&gt;所以这大概就是见证/参与这些 idea 成长的代价吧，也意识到这些东西不是在刚开始就像后来大家接受流行时那么美好的。React 发布 5 周年生日时回放 Jordan/Tom 2013 年第一次对外发布 React/JSX 的视频。我问 Jordan 说你后来怎么没再去分享了。他说你不知道我那天讲完下来被所有听众指着批评。React 第一次在内部使用是 2011 年在 news feed，然后是 2012 年 instagram (pete hunt)，所以这个时间其实很长很长。&lt;/p&gt;
+
+&lt;p&gt;很多人（包括我）都会经常觉得 XYZ 新事物跟老东西比太新、太不成熟、体验太不好、想要解决的问题太多、解决方案太 overkill、然后就没有然后了，但其实说不定你在看的这个就是 next big thing 呢。这些梦想家们 vision 里的 big picture 太大了，有的人可能在半个 picture 出来的时候就可以看出来了，有的人则可能要等到整个 picture 都快填满了才看得出来。&lt;/p&gt;
+
+&lt;p&gt;如果不是因为 Ads/Messenger 的坑深 React/Reason/Flux 也就不会在这里诞生了，&lt;/p&gt;
+
+&lt;p&gt;如果不是因为 Facebook 的坑深 GraphQL/Infer/Hack/Flow/Buck 也就不会在这里诞生了。&lt;/p&gt;
+
+&lt;p&gt;正是有一群开垦者不怕坑深才使得各种 idea 成为了大家手上好用的 tool 啊。&lt;/p&gt;
+
+&lt;p&gt;梦想家程序员们的工作价值于实干主义的程序员，总是很容易在过程中被低估、忽视，或是得不到尊重。而又在流行之后被神化，仿佛是那个人早已洞察一切一样。其实梦想家的工作，也是一点点累加，一点点迭代起来的。他们也需要伯乐和追随者的支持和帮助。&lt;/p&gt;
+
+&lt;p&gt;Chenglou 这个人总是在巨兴奋与巨沮丧之间切换，这段时间下来，我开始能感受这种情绪的来源了。&lt;/p&gt;
+
+&lt;p&gt;他总是用一句话来总结他回答我的吐槽、抱怨、疑问、惊叹，我就用这句话来结尾好了：&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;“Welcome to the producer side!”&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 30 Jun 2018 00:00:00 -0700</pubDate>
+        <link>http://0.0.0.0:4000/2018/06/30/dreamer/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2018/06/30/dreamer/</guid>
+        
+        <category>Facebook</category>
+        
+        <category>生活</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
