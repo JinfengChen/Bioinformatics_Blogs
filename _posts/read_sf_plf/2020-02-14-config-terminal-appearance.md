@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Config terminal appearance"
-subtitle: ''
+subtitle: 'Make your HPCC all same style'
 author: "Jinfeng"
 header-style: text
 lang: en
