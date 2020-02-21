@@ -6,7 +6,7 @@ email: jinfeng7chen@gmail.com
 description: ""
 keyword: ""
 url: jinfengchen.github.io              # your host, for absolute URL
-baseurl: /blogs                             # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: /blog                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
 future: true
