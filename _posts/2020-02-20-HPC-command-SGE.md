@@ -9,6 +9,8 @@ tags:
   - HPC
 ---
 
+Collection of SGE scripts and commands
+
 ## A example shell script to run speedseq with SGE
 
 ```
