@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "HPC SGE command"
-subtitle: "Use SEG cluster
+subtitle: "Use SEG cluster"
 author: "Jinfeng"
 header-mask: 0.4
 tags:
