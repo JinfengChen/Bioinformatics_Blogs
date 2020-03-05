@@ -1,0 +1,24 @@
+---
+layout: post
+title: "OpenBLAS error in python"
+subtitle: ""
+author: "Jinfeng"
+header-mask: 0.4
+tags:
+  - Linux
+  - Python
+---
+
+Error messages:
+
+```
+# https://xbuba.com/questions/51179118
+OpenBLAS blas_thread_init: pthread_create: Resource temporarily unavailable
+```
+
+To those fix this, add env variable in shell
+
+```
+export OMP_NUM_THREADS=1
+export USE_SIMPLE_THREADED_LEVEL3= 1
+```
